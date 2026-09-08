@@ -1,0 +1,337 @@
+/* =========================================================
+   AUTH PAGES
+   ========================================================= */
+
+.auth-page {
+  min-height: 100vh;
+
+  background: #f8fbfd;
+
+  color: #102033;
+}
+
+
+/* =========================================================
+   AUTH NAVBAR
+   ========================================================= */
+
+.auth-navbar {
+  width: 100%;
+  height: 76px;
+
+  border-bottom: 1px solid #dfe7ed;
+
+  background: rgba(255, 255, 255, 0.97);
+}
+
+.auth-navbar-inner {
+  width: min(1440px, calc(100% - 80px));
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #102b42;
+
+  font-size: 19px;
+  font-weight: 900;
+
+  text-decoration: none;
+}
+
+.auth-brand-mark {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 9px;
+
+  color: white;
+  background: #1269d3;
+
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.auth-back-link {
+  color: #617687;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.auth-back-link:hover {
+  color: #1269d3;
+}
+
+
+/* =========================================================
+   AUTH MAIN
+   ========================================================= */
+
+.auth-main {
+  min-height: calc(100vh - 76px);
+
+  display: flex;
+  justify-content: center;
+
+  padding: 80px 40px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ROLE SELECTION
+   ========================================================= */
+
+.role-selection {
+  width: min(900px, 100%);
+}
+
+.role-selection-heading {
+  max-width: 680px;
+
+  margin-bottom: 45px;
+}
+
+.auth-eyebrow {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #1269d3;
+
+  font-size: 10px;
+  font-weight: 900;
+
+  letter-spacing: 1.5px;
+}
+
+.role-selection-heading h1,
+.auth-form-heading h1 {
+  margin: 0 0 14px;
+
+  color: #102033;
+
+  font-size: clamp(40px, 5vw, 58px);
+  line-height: 1.03;
+
+  letter-spacing: -2.5px;
+}
+
+.role-selection-heading p,
+.auth-form-heading p {
+  max-width: 620px;
+
+  margin: 0;
+
+  color: #708392;
+
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   ROLE CARDS
+   ========================================================= */
+
+.role-cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.role-card {
+  position: relative;
+
+  min-height: 280px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+
+  border: 1px solid #dce6ee;
+  border-radius: 18px;
+
+  background: white;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #c4d8e8;
+
+  box-shadow:
+    0 20px 45px rgba(20, 55, 80, 0.10);
+}
+
+.role-number {
+  color: #1269d3;
+
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.role-card-content {
+  margin-top: auto;
+}
+
+.role-card h2 {
+  margin: 0 0 12px;
+
+  color: #102033;
+
+  font-size: 25px;
+  letter-spacing: -0.8px;
+}
+
+.role-card p {
+  max-width: 340px;
+
+  margin: 0;
+
+  color: #708392;
+
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.role-arrow {
+  position: absolute;
+
+  right: 30px;
+  bottom: 27px;
+
+  color: #1269d3;
+
+  font-size: 25px;
+
+  transition: transform 0.25s ease;
+}
+
+.role-card:hover .role-arrow {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   AUTH FORM PAGES
+   ========================================================= */
+
+.auth-form-page {
+  width: min(680px, 100%);
+}
+
+.auth-form-heading {
+  margin-bottom: 35px;
+}
+
+.coming-form {
+  padding: 30px;
+
+  border: 1px solid #dce6ee;
+  border-radius: 18px;
+
+  background: white;
+
+  box-sizing: border-box;
+}
+
+.form-placeholder {
+  min-height: 250px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px dashed #cbd9e3;
+  border-radius: 12px;
+
+  color: #8293a0;
+
+  font-size: 14px;
+}
+
+.auth-existing {
+  margin: 25px 0 0;
+
+  color: #708392;
+
+  font-size: 13px;
+}
+
+.auth-existing a {
+  color: #1269d3;
+
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.auth-existing a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .auth-navbar {
+    height: 68px;
+  }
+
+  .auth-navbar-inner {
+    width: calc(100% - 40px);
+  }
+
+  .auth-main {
+    padding: 55px 20px;
+  }
+
+  .role-selection-heading h1,
+  .auth-form-heading h1 {
+    font-size: 40px;
+
+    letter-spacing: -1.8px;
+  }
+
+  .role-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .role-card {
+    min-height: 240px;
+  }
+
+}
