@@ -266,6 +266,88 @@
   box-sizing: border-box;
 }
 
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  color: #425a70;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d4e0ea;
+  border-radius: 10px;
+  background: #f7fafc;
+  color: #102033;
+  font: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #1269d3;
+  box-shadow: 0 0 0 3px rgba(18, 105, 211, 0.12);
+  background: white;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.form-error {
+  padding: 12px 14px;
+  border: 1px solid rgba(201, 45, 45, 0.18);
+  border-radius: 10px;
+  background: rgba(255, 97, 97, 0.06);
+  color: #b12c2c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auth-submit-button {
+  width: 100%;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.auth-form-help-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: #617687;
+  font-size: 12px;
+}
+
+.auth-form-help-row strong {
+  color: #102033;
+}
+
 .form-placeholder {
   min-height: 250px;
 
@@ -327,6 +409,10 @@
   }
 
   .role-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
     grid-template-columns: 1fr;
   }
 

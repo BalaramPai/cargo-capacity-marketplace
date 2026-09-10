@@ -1,0 +1,32 @@
+export const roleNavMap = {
+  EXPORTER: [
+    { label: "Dashboard", path: "/exporter/dashboard" },
+    { label: "My Shipments", path: "/exporter/shipments" },
+    { label: "Find Capacity", path: "/exporter/capacity" },
+    { label: "Bookings", path: "/exporter/bookings" },
+    { label: "Tracking", path: "/exporter/tracking" },
+    { label: "Messages", path: "/exporter/messages" },
+    { label: "Settings", path: "/exporter/settings" },
+  ],
+  PROVIDER: [
+    { label: "Dashboard", path: "/provider/dashboard" },
+    { label: "My Containers", path: "/provider/containers" },
+    { label: "Capacity", path: "/provider/containers/new" },
+    { label: "Bookings", path: "/provider/bookings" },
+    { label: "Operations", path: "/provider/operations" },
+    { label: "Messages", path: "/provider/messages" },
+    { label: "Settings", path: "/provider/settings" },
+  ],
+  ADMIN: [
+    { label: "Dashboard", path: "/admin/dashboard" },
+    { label: "Providers", path: "/admin/providers" },
+    { label: "Shipments", path: "/admin/shipments" },
+    { label: "Containers", path: "/admin/containers" },
+    { label: "Bookings", path: "/admin/bookings" },
+    { label: "Payments", path: "/admin/dashboard" },
+    { label: "Disputes", path: "/admin/disputes" },
+    { label: "Users", path: "/admin/users" },
+    { label: "Audit", path: "/admin/dashboard" },
+    { label: "Settings", path: "/admin/settings" },
+  ],
+} as const;
